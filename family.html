@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>家庭教育 - 易道</title>
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family:"PingFang SC","Microsoft YaHei",sans-serif; background:#0a0a1a; color:#e8d5b0; min-height:100vh; }
+.back-btn { position:fixed; top:20px; left:20px; z-index:100; }
+.back-btn a { display:inline-flex; align-items:center; gap:6px; color:#8a7a5a; text-decoration:none; font-size:14px; padding:8px 16px; border:1px solid rgba(201,168,76,0.3); border-radius:30px; transition:all 0.3s; }
+.back-btn a:hover { border-color:#c9a84c; color:#c9a84c; }
+.container { max-width:860px; margin:0 auto; padding:80px 24px 80px; }
+.hero { text-align:center; padding:40px 0 50px; }
+.hero-icon { font-size:64px; margin-bottom:16px; }
+.hero-title { font-size:30px; color:#c9a84c; letter-spacing:6px; margin-bottom:10px; }
+.hero-sub { font-size:14px; color:#8a7a5a; line-height:2; }
+.divider { width:60px; height:2px; background:linear-gradient(90deg,transparent,#c9a84c,transparent); margin:0 auto 40px; }
+.tabs { display:flex; flex-wrap:wrap; gap:10px; margin-bottom:40px; justify-content:center; }
+.tab-btn { padding:10px 20px; background:rgba(255,255,255,0.03); border:1px solid rgba(201,168,76,0.15); border-radius:30px; color:#8a7a5a; cursor:pointer; font-size:13px; transition:all 0.3s; font-family:inherit; }
+.tab-btn:hover,.tab-btn.active { border-color:#c9a84c; background:rgba(201,168,76,0.1); color:#c9a84c; }
+.tab-panel { display:none; }
+.tab-panel.active { display:block; animation:fadeIn 0.4s ease; }
+@keyframes fadeIn { from{opacity:0;transform:translateY(10px);} to{opacity:1;transform:translateY(0);} }
+.section-h2 { font-size:17px; color:#c9a84c; letter-spacing:3px; margin-bottom:20px; padding-bottom:12px; border-bottom:1px solid rgba(201,168,76,0.12); }
+.article { background:rgba(255,255,255,0.02); border:1px solid rgba(201,168,76,0.1); border-radius:18px; padding:28px 32px; margin-bottom:18px; }
+.article h3 { font-size:16px; color:#c9a84c; margin-bottom:12px; }
+.article p { font-size:14px; color:#a0906a; line-height:2.1; margin-bottom:10px; }
+.article ul { padding-left:20px; }
+.article li { font-size:13px; color:#8a7a5a; line-height:2.2; }
+.article blockquote { background:rgba(201,168,76,0.06); border-left:3px solid #c9a84c; padding:14px 20px; border-radius:0 12px 12px 0; margin:14px 0; }
+.article blockquote p { color:#c9a84c; margin:0; font-size:13px; line-height:1.9; }
+.age-card { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:14px; margin-top:16px; }
+.age-item { background:rgba(255,255,255,0.03); border:1px solid rgba(201,168,76,0.1); border-radius:14px; padding:18px 20px; }
+.age-item h4 { font-size:14px; color:#c9a84c; margin-bottom:8px; }
+.age-item p { font-size:12px; color:#8a7a5a; line-height:1.9; margin:0; }
+.footer { text-align:center; padding:30px 20px; color:#3a2a1a; font-size:12px; border-top:1px solid rgba(201,168,76,0.08); margin-top:40px; }
+.footer span { color:#c9a84c; }
+@media(max-width:600px){ .article{padding:20px;} }
+</style>
+</head>
+<body>
+<div class="back-btn"><a href="index.html">← 返回首页</a></div>
+<div class="container">
+  <div class="hero">
+    <div class="hero-icon">👨‍👩‍👧</div>
+    <div class="hero-title">易道 · 家庭教育</div>
+    <div class="hero-sub">用易经思维读懂孩子，<br>用古老智慧建立和谐温暖的家庭关系</div>
+  </div>
+  <div class="divider"></div>
+
+  <div class="tabs">
+    <button class="tab-btn active" data-target="f1">易经育儿智慧</button>
+    <button class="tab-btn" data-target="f2">亲子沟通</button>
+    <button class="tab-btn" data-target="f3">各年龄段</button>
+    <button class="tab-btn" data-target="f4">家庭能量场</button>
+  </div>
+
+  <!-- 易经育儿智慧 -->
+  <div class="tab-panel active" id="f1">
+    <h2 class="section-h2">☯ 易经中的家庭教育智慧</h2>
+
+    <div class="article">
+      <h3>「蒙卦」：教育的本质是唤醒</h3>
+      <p>《易经》第四卦「蒙卦」是专门讲教育的——「蒙以养正，圣功也。」</p>
+      <p>教育的根本，不是灌输知识，而是：</p>
+      <ul>
+        <li><strong>养正：</strong>培养孩子正面的品格和价值观</li>
+        <li><strong>因材施教：</strong>每个孩子天赋不同，像64卦各有其用</li>
+        <li><strong>身教胜于言教：</strong>父母自己做到，孩子自然跟随</li>
+      </ul>
+      <blockquote><p>《易经·蒙卦》：「匪我求童蒙，童蒙求我。」<br>不是我们去追着孩子教育，而是启发孩子主动来求教。教育最好的时机，是孩子自己产生好奇心的时候。</p></blockquote>
+    </div>
+
+    <div class="article">
+      <h3>「家人卦」：家庭的秩序与爱</h3>
+      <p>「家人卦」（第37卦）是易经中专门论述家庭的卦象——「家人，女正位内，男正位外。」</p>
+      <p>这里的"正位"不是说谁要做什么，而是说：<strong>每个人在自己的位置上，都能发挥最好的作用，就是家庭的最佳状态。</strong></p>
+      <ul>
+        <li>父母正位：给予爱、设立边界、做榜样</li>
+        <li>孩子正位：被尊重、被理解、有安全感</li>
+        <li>家庭正位：有规矩、有温度、有沟通</li>
+      </ul>
+      <blockquote><p>《易经·家人卦》：「风自火出，家人。君子以言有物而行有恒。」<br>家庭的力量源自日常：父母说话有内容、有分量，行动有恒心、有耐心。</p></blockquote>
+    </div>
+
+    <div class="article">
+      <h3>「颐卦」：养孩子的四个层次</h3>
+      <p>「颐卦」（第27卦）讲的是颐养之道——不只是身体养育，更是精神养育。</p>
+      <ul>
+        <li><strong>第一层：养身</strong> — 给孩子吃饱穿暖，健康成长</li>
+        <li><strong>第二层：养心</strong> — 关注孩子的情绪，给予情感支持</li>
+        <li><strong>第三层：养志</strong> — 发现孩子的兴趣和天赋，支持他们追求</li>
+        <li><strong>第四层：养德</strong> — 培养品德和价值观，成为有担当的人</li>
+      </ul>
+      <blockquote><p>《易经·颐卦》：「观颐，自求口实。」<br>观察一个人如何养育自己，就能知道他的人生格局。</p></blockquote>
+    </div>
+
+    <div class="article">
+      <h3>八卦与孩子的天赋类型</h3>
+      <p>易经的八卦可以帮助父母识别孩子的天生特质，因材施教：</p>
+      <div class="age-card">
+        <div class="age-item"><h4>☰ 乾卦孩子</h4><p>天生领袖，意志坚定。需要给予挑战和目标，但也要教他们接纳挫折和失败。</p></div>
+        <div class="age-item"><h4>☷ 坤卦孩子</h4><p>温柔敏感，善解人意。需要充分的安全感，鼓励他们表达需求，设立健康的边界。</p></div>
+        <div class="age-item"><h4>☳ 震卦孩子</h4><p>精力充沛，爱冒险。需要大量运动和活动，同时培养专注力和延迟满足。</p></div>
+        <div class="age-item"><h4>☴ 巽卦孩子</h4><p>聪明灵活，适应力强。需要秩序和规律，同时给予适度选择权。</p></div>
+        <div class="age-item"><h4>☱ 兑卦孩子</h4><p>善于交际，表达力强。需要被倾听和理解，帮助他们学会深度独处。</p></div>
+        <div class="age-item"><h4>☶ 艮卦孩子</h4><p>内敛稳重，思考深入。需要尊重他们的界限，鼓励适度表达和冒险。</p></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 亲子沟通 -->
+  <div class="tab-panel" id="f2">
+    <h2 class="section-h2">💬 亲子沟通的易经智慧</h2>
+
+    <div class="article">
+      <h3>用「兑卦」的方式和孩子说话</h3>
+      <p>「兑卦」是易经中代表喜悦、沟通的卦——「兑，说也。」</p>
+      <p>兑卦的沟通原则：</p>
+      <ul>
+        <li><strong>先连接，再教导：</strong>在指出问题前，先让孩子感受到被爱</li>
+        <li><strong>说感受，不说指责：</strong>"我看到你没写作业，我很担心" 代替 "你怎么又不写作业！"</li>
+        <li><strong>倾听孩子的「卦象」：</strong>孩子每个行为背后都有原因，先听再说</li>
+      </ul>
+      <blockquote><p>《易经·兑卦》：「丽泽，兑。君子以朋友讲习。」<br>像朋友一样平等地交流，互相学习，这便是最好的亲子沟通方式。</p></blockquote>
+    </div>
+
+    <div class="article">
+      <h3>批评孩子的正确方式（易经版）</h3>
+      <p>易经告诉我们：「益卦」讲的是如何有益地给予帮助，包括如何批评。</p>
+      <ul>
+        <li><strong>对事不对人：</strong>批评行为，不批评人格——"这件事这样做不太好" 代替 "你怎么这么笨"</li>
+        <li><strong>先肯定，再建议：</strong>"你很努力，这道题方向对了，我们看看哪里可以改进"</li>
+        <li><strong>给选择，不命令：</strong>"你可以选择A方案或者B方案，你想想哪个更适合？"</li>
+        <li><strong>批评完要修复：</strong>批评后，一定要重新建立连接——一个拥抱胜过千言万语</li>
+      </ul>
+    </div>
+
+    <div class="article">
+      <h3>当孩子情绪崩溃时——「坎卦」处理法</h3>
+      <p>孩子哭闹、发脾气时，对应的是「坎卦」——情绪的险境。</p>
+      <ul>
+        <li><strong>第一步（停）：</strong>父母先稳住自己的情绪——你自己是孩子的情绪容器</li>
+        <li><strong>第二步（接纳）：</strong>告诉孩子："我看到你很生气，这没关系"</li>
+        <li><strong>第三步（命名）：</strong>"你现在是愤怒，还是委屈，还是害怕？"帮孩子识别情绪</li>
+        <li><strong>第四步（陪伴）：</strong>陪着孩子度过这个情绪，不是不管，是有温度地在旁边</li>
+        <li><strong>第五步（复盘）：</strong>情绪过去后，再讨论发生了什么，下次怎么办</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 各年龄段 -->
+  <div class="tab-panel" id="f3">
+    <h2 class="section-h2">👶 不同年龄段的易经养育重点</h2>
+
+    <div class="article">
+      <h3>0-3岁：奠定「坤卦」的根基</h3>
+      <p>这个阶段对应「坤卦」——厚德载物。孩子需要的是无条件的爱和安全感。</p>
+      <ul>
+        <li>及时回应孩子的需求——这奠定一生安全感的根基</li>
+        <li>建立规律的作息——坤卦的"顺"来源于稳定</li>
+        <li>多拥抱、多肌肤接触——爱的语言</li>
+      </ul>
+    </div>
+
+    <div class="article">
+      <h3>3-6岁：开启「屯卦」的探索</h3>
+      <p>这个阶段对应「屯卦」——万物始生。孩子开始探索世界，充满好奇。</p>
+      <ul>
+        <li>允许孩子自由玩耍——在玩中发展各项能力</li>
+        <li>开始设立简单的规则——"可以"和"不可以"要清晰一致</li>
+        <li>用绘本和故事引导——比说教有效十倍</li>
+      </ul>
+    </div>
+
+    <div class="article">
+      <h3>6-12岁：培养「乾卦」的品格</h3>
+      <p>这个阶段对应「乾卦」——刚健进取。孩子开始上学，进入社会化的过程。</p>
+      <ul>
+        <li>培养好的学习习惯——比分数更重要</li>
+        <li>鼓励面对挫折——"这件事你觉得怎么解决？"培养解决问题的能力</li>
+        <li>支持兴趣发展——找到孩子的天赋所在</li>
+      </ul>
+    </div>
+
+    <div class="article">
+      <h3>12-18岁：陪伴「晋卦」的成长</h3>
+      <p>这个阶段对应「晋卦」——明出地上，积极进取但需要方向。</p>
+      <ul>
+        <li>给予更多自主权——他们需要"我说了算"的感觉</li>
+        <li>少讲道理，多倾听——青春期是孩子建立自我认同的时期</li>
+        <li>做"副驾驶"——陪伴但不是控制，给建议但不代替决定</li>
+      </ul>
+      <blockquote><p>《易经·晋卦》：「晋，进也。明出地上，顺而丽乎大明。」<br>青少年的成长需要光明的引导，而非强制。父母的陪伴像太阳一样，给方向但不束缚。</p></blockquote>
+    </div>
+  </div>
+
+  <!-- 家庭能量场 -->
+  <div class="tab-panel" id="f4">
+    <h2 class="section-h2">🏠 家庭能量场与易经</h2>
+
+    <div class="article">
+      <h3>你的家是什么「卦象」？</h3>
+      <p>易经可以帮我们"诊断"家庭能量场。观察你的家庭：</p>
+      <ul>
+        <li><strong>乾卦家庭：</strong>目标感强，但可能缺乏温情——需要多增加"坤卦"的柔软</li>
+        <li><strong>坤卦家庭：</strong>温暖有爱，但可能缺乏方向——需要加入"乾卦"的行动力</li>
+        <li><strong>离卦家庭：</strong>热闹有活力，但可能缺乏深度——需要培养独处和内省</li>
+        <li><strong>坎卦家庭：</strong>有深度，但可能氛围偏压抑——需要增加户外活动和正向沟通</li>
+      </ul>
+    </div>
+
+    <div class="article">
+      <h3>提升家庭能量的易经方法</h3>
+      <p>「泰卦」是易经中最吉利的一个卦——天地交泰，万事亨通。打造这样的家庭：</p>
+      <ul>
+        <li><strong>每天有共同时光：</strong>哪怕只是吃饭时放下手机，认真交流</li>
+        <li><strong>家庭仪式感：</strong>周末家庭活动、节日庆祝——让家成为温暖的记忆</li>
+        <li><strong>正向语言：</strong>用"谢谢""我爱你""辛苦了"——这些简单的话有巨大能量</li>
+        <li><strong>允许脆弱：</strong>父母也会犯错，会累，会难过——真实比完美更有力量</li>
+        <li><strong>解决问题的态度：</strong>家里出现问题→全家一起面对→一起找办法</li>
+      </ul>
+      <blockquote><p>《易经·泰卦》：「小往大来，吉亨。天地交泰，后以财成天地之道。」<br>小的付出（父母的给予）换来大的回报（孩子的成长）。这就是家庭的意义。</p></blockquote>
+    </div>
+
+    <div class="article">
+      <h3>改善家庭风水的简单方法</h3>
+      <p>易经的风水智慧，其实本质是「环境如何影响人的心理」：</p>
+      <ul>
+        <li><strong>客厅整洁明亮：</strong>客厅是家人共同的空间，乱则心乱</li>
+        <li><strong>餐桌是家的中心：</strong>尽量全家一起吃饭，这是家庭凝聚力的关键</li>
+        <li><strong>孩子的书桌：</strong>整洁、采光好、背有靠山（墙壁）——培养专注力</li>
+        <li><strong>减少电子产品占用时间：</strong>每人每天有"无屏幕时间"——家庭对话时间</li>
+        <li><strong>家里有笑声：</strong>笑声是最好的风水——一起看喜剧、玩游戏、讲故事</li>
+      </ul>
+    </div>
+  </div>
+
+</div>
+<div class="footer"><p>© 2025 <span>易道 YIDAO</span> | Xinhui-631</p><p style="margin-top:6px;">家庭教育是一生的修行</p></div>
+<script>
+document.querySelectorAll('.tab-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+    document.querySelectorAll('.tab-panel').forEach(c => c.classList.remove('active'));
+    btn.classList.add('active');
+    const target = document.getElementById(btn.dataset.target);
+    if (target) target.classList.add('active');
+  });
+});
+</script>
+</body>
+</html>
