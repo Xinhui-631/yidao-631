@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>心理咨询 - 易道</title>
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family:"PingFang SC","Microsoft YaHei",sans-serif; background:#0a0a1a; color:#e8d5b0; min-height:100vh; }
+.back-btn { position:fixed; top:20px; left:20px; z-index:100; }
+.back-btn a { display:inline-flex; align-items:center; gap:6px; color:#8a7a5a; text-decoration:none; font-size:14px; padding:8px 16px; border:1px solid rgba(201,168,76,0.3); border-radius:30px; transition:all 0.3s; }
+.back-btn a:hover { border-color:#c9a84c; color:#c9a84c; }
+.container { max-width:860px; margin:0 auto; padding:80px 24px 80px; }
+.hero { text-align:center; padding:40px 0 50px; }
+.hero-icon { font-size:64px; margin-bottom:16px; }
+.hero-title { font-size:30px; color:#c9a84c; letter-spacing:6px; margin-bottom:10px; }
+.hero-sub { font-size:14px; color:#8a7a5a; line-height:2; }
+.divider { width:60px; height:2px; background:linear-gradient(90deg,transparent,#c9a84c,transparent); margin:0 auto 40px; }
+.tabs { display:flex; flex-wrap:wrap; gap:10px; margin-bottom:40px; justify-content:center; }
+.tab-btn { padding:10px 20px; background:rgba(255,255,255,0.03); border:1px solid rgba(201,168,76,0.15); border-radius:30px; color:#8a7a5a; cursor:pointer; font-size:13px; transition:all 0.3s; font-family:inherit; }
+.tab-btn:hover { border-color:#c9a84c; color:#c9a84c; }
+.tab-btn.active { border-color:#c9a84c; background:rgba(201,168,76,0.1); color:#c9a84c; }
+.tab-panel { display:none; }
+.tab-panel.active { display:block; animation:fadeIn 0.4s ease; }
+@keyframes fadeIn { from{opacity:0;transform:translateY(10px);} to{opacity:1;transform:translateY(0);} }
+.section-h2 { font-size:17px; color:#c9a84c; letter-spacing:3px; margin-bottom:20px; padding-bottom:12px; border-bottom:1px solid rgba(201,168,76,0.12); }
+.article { background:rgba(255,255,255,0.02); border:1px solid rgba(201,168,76,0.1); border-radius:18px; padding:28px 32px; margin-bottom:18px; }
+.article h3 { font-size:16px; color:#c9a84c; margin-bottom:12px; letter-spacing:1px; }
+.article p { font-size:14px; color:#a0906a; line-height:2.1; margin-bottom:12px; }
+.article ul { padding-left:20px; }
+.article li { font-size:13px; color:#8a7a5a; line-height:2.2; }
+.article blockquote { background:rgba(201,168,76,0.06); border-left:3px solid #c9a84c; padding:16px 20px; border-radius:0 12px 12px 0; margin:14px 0; }
+.article blockquote p { color:#c9a84c; margin:0; font-size:14px; line-height:1.9; }
+.technique-card { background:rgba(255,255,255,0.02); border:1px solid rgba(201,168,76,0.12); border-radius:16px; padding:24px; margin-bottom:14px; }
+.technique-card h4 { font-size:15px; color:#c9a84c; margin-bottom:10px; }
+.technique-card p { font-size:13px; color:#8a7a5a; line-height:2; }
+.footer { text-align:center; padding:30px 20px; color:#3a2a1a; font-size:12px; border-top:1px solid rgba(201,168,76,0.08); margin-top:40px; }
+.footer span { color:#c9a84c; }
+@media(max-width:600px){ .article{padding:20px;} }
+</style>
+</head>
+<body>
+<div class="back-btn"><a href="index.html">← 返回首页</a></div>
+<div class="container">
+  <div class="hero">
+    <div class="hero-icon">🧠</div>
+    <div class="hero-title">易道 · 心理咨询</div>
+    <div class="hero-sub">以易经智慧为引，结合现代心理学，<br>帮你理清情绪、看见内心、找到前行的力量</div>
+  </div>
+  <div class="divider"></div>
+
+  <div class="tabs">
+    <button class="tab-btn active" data-target="panel1">情绪调节</button>
+    <button class="tab-btn" data-target="panel2">易经心理学</button>
+    <button class="tab-btn" data-target="panel3">常见困扰</button>
+    <button class="tab-btn" data-target="panel4">自我觉察</button>
+  </div>
+
+  <!-- 情绪调节 -->
+  <div class="tab-panel active" id="panel1">
+    <h2 class="section-h2">🌊 情绪调节实用方法</h2>
+
+    <div class="article">
+      <h3>「停」字诀：当情绪来袭时</h3>
+      <p>易经说：「躁人事不久，君子以果行育德。」人在情绪激动时做的决定，往往事后后悔。</p>
+      <ul>
+        <li><strong>停：</strong>感觉情绪升起时，先停下来，不要立即反应</li>
+        <li><strong>看：</strong>观察身体感受：胸口紧？胃部发紧？呼吸变浅？</li>
+        <li><strong>问：</strong>问自己：这份情绪想告诉我什么？它在保护我什么？</li>
+      </ul>
+      <blockquote><p>《易经·艮卦》：「艮其背，不获其身；行其庭，不见其人，无咎。」<br>意思是：把注意力从纷乱的情绪上移开，回归内在的宁静，自然无咎。</p></blockquote>
+    </div>
+
+    <div class="article">
+      <h3>焦虑的易经解读与应对</h3>
+      <p>焦虑在易经中对应「坎卦」——重险之象。坎为水，水的特性是「就下」——越是在低谷，越能找到出路。</p>
+      <ul>
+        <li>焦虑的本质是「对未来的不确定性感到恐惧」</li>
+        <li>易经的智慧：把「大忧虑」拆成「小步骤」，一步一步走</li>
+        <li>「坎」卦告诉我们的：险中有平，静下心来，水能穿石</li>
+      </ul>
+      <blockquote><p>《易经·坎卦》：「习坎，重险也。水流而不盈，行险而不失其信。」<br>习得面对险境的能力，像水一样，虽遇阻而不放弃。</p></blockquote>
+    </div>
+
+    <div class="article">
+      <h3>愤怒的转化之道</h3>
+      <p>愤怒是强大的能量，易经用「雷」来象征——震卦。震的特性是「惊远而惧迩」，突然而有力。</p>
+      <ul>
+        <li>愤怒背后往往藏着「未被满足的需求」</li>
+        <li>先承认愤怒存在（不要压抑），再问自己：真正需要的是什么？</li>
+        <li>把愤怒转化为行动力：乾卦的「刚健」——有力但不失控</li>
+      </ul>
+      <blockquote><p>《易经·损卦》：「损其暴，以益其德。」<br>减少伤害性的发泄，转化为对自身德行的增益。</p></blockquote>
+    </div>
+  </div>
+
+  <!-- 易经心理学 -->
+  <div class="tab-panel" id="panel2">
+    <h2 class="section-h2">☯ 易经与心理学的对话</h2>
+
+    <div class="article">
+      <h3>易经的心理学内核</h3>
+      <p>现代心理学研究发现，易经64卦的排列暗含了人类心理发展的完整路径——从混沌（乾）到整合（既济），从创伤（蹇）到疗愈（解）。</p>
+      <ul>
+        <li><strong>乾卦</strong> = 自我认同与自信的确立</li>
+        <li><strong>坤卦</strong> = 安全感的建立，与他人的关系</li>
+        <li><strong>屯卦</strong> = 人生早期的困惑与探索</li>
+        <li><strong>蒙卦</strong> = 自我认知与觉醒的开始</li>
+        <li><strong>颐卦</strong> = 自我滋养与内在成长</li>
+        <li><strong>坎卦</strong> = 面对创伤与深度疗愈</li>
+        <li><strong>家人卦</strong> = 内在家庭的整合</li>
+      </ul>
+    </div>
+
+    <div class="article">
+      <h3>八卦与人的基本心理类型</h3>
+      <p>易经的八卦可以对应人的八种基本心理特质，了解自己属于哪种类型，更容易找到适合自己的人生道路：</p>
+      <div class="technique-card"><h4>☰ 乾卦人：刚健型</h4><p>特质：目标导向强、有领导力、意志坚定。<br>需要发展的：柔软、接纳、放下控制。</p></div>
+      <div class="technique-card"><h4>☷ 坤卦人：厚德型</h4><p>特质：包容、耐心、善解人意、有直觉力。<br>需要发展的：设立边界、表达需求、走向世界。</p></div>
+      <div class="technique-card"><h4>☵ 坎卦人：深邃型</h4><p>特质：洞察力强、直觉敏锐、意志坚强。<br>需要发展的：走出阴霾、寻求支持、避免自我封闭。</p></div>
+      <div class="technique-Card"><h4>☲ 离卦人：光明型</h4><p>特质：外向热情、表达力强、富有同理心。<br>需要发展的：内在沉稳、学会独处、接纳黑暗。</p></div>
+      <div class="technique-card"><h4>☳ 震卦人：行动型</h4><p>特质：充满活力、行动力强、有冲劲。<br>需要发展的：冷静思考、谨慎规划、避免冲动。</p></div>
+      <div class="technique-card"><h4>☶ 艮卦人：稳健型</h4><p>特质：稳重可靠、内省深刻、边界清晰。<br>需要发展的：适度冒险、走出舒适区、接纳变化。</p></div>
+      <div class="technique-card"><h4>☴ 巽卦人：柔性型</h4><p>特质：适应力强、善于沟通、情商高。<br>需要发展的：坚定立场、培养勇气、说"不"的能力。</p></div>
+      <div class="technique-card"><h4>☱ 兑卦人：喜悦型</h4><p>特质：乐观开朗、人际高手、善于表达情感。<br>需要发展的：深度连接、面对痛苦、长期承诺。</p></div>
+    </div>
+  </div>
+
+  <!-- 常见困扰 -->
+  <div class="tab-panel" id="panel3">
+    <h2 class="section-h2">💭 常见心理困扰与易经指引</h2>
+
+    <div class="article">
+      <h3>感觉人生迷茫怎么办？</h3>
+      <p>这对应易经的「屯卦」——万物初生，混沌不明。</p>
+      <ul>
+        <li><strong>屯卦告诉我们：</strong>万事开头难，但方向不明时，不要急着冲，先稳住</li>
+        <li><strong>具体行动：</strong>写下你目前最担心的3件事，然后写下每个问题的最小下一步</li>
+        <li><strong>易经智慧：</strong>「屯，建侯。」——在迷茫时，找一个可以信任的人或方向，像建国一样先定根基</li>
+      </ul>
+    </div>
+
+    <div class="article">
+      <h3>总是活在过去的阴影里？</h3>
+      <p>这对应易经的「明夷卦」——光明入地中，暂时的黑暗。</p>
+      <ul>
+        <li><strong>明夷卦告诉我们：</strong>有时候需要韬光养晦，暂时收敛光芒是保护自己</li>
+        <li><strong>具体行动：</strong>把过去的创伤写下来，然后问自己：这件事教会了我什么？</li>
+        <li><strong>关键转变：</strong>从「为什么是我」转向「这件事如何让我更强」</li>
+      </ul>
+      <blockquote><p>《易经·明夷卦》：「明入地中，明夷。君子以莅众，用晦而明。」<br>在黑暗中保存实力，等待时机再度发光。</p></blockquote>
+    </div>
+
+    <div class="article">
+      <h3>在人际关系中感到疲惫？</h3>
+      <p>这对应易经的「比卦」——人与人之间的亲比之道。</p>
+      <ul>
+        <li><strong>比卦告诉我们：</strong>不是所有关系都值得维系，关键在于「诚」</li>
+        <li><strong>具体行动：</strong>列出你身边最重要的5个人，问自己：这段关系让我更好了吗？</li>
+        <li><strong>易经智慧：</strong>「比，吉」——真诚的亲近带来吉祥；虚伪的迎合带来消耗</li>
+      </ul>
+    </div>
+
+    <div class="article">
+      <h3>总是自我怀疑，缺乏自信？</h3>
+      <p>这对应易经的「乾卦」——天行健，君子以自强不息。</p>
+      <ul>
+        <li><strong>乾卦告诉我们：</strong>每个人内在都有「天」的品质——无限的可能性</li>
+        <li><strong>具体行动：</strong>每天写下3件今天做得好的小事，不求大，只求真实</li>
+        <li><strong>关键认知：</strong>自信不是"我很厉害"，而是"我可以变得更好"</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 自我觉察 -->
+  <div class="tab-panel" id="panel4">
+    <h2 class="section-h2">🔍 自我觉察练习</h2>
+
+    <div class="article">
+      <h3>每日觉察日记（易经版）</h3>
+      <p>每天睡前花5分钟，用易经的智慧做自我觉察：</p>
+      <ul>
+        <li>① 今天最触动我的一件事是什么？（对应哪一卦？）</li>
+        <li>② 这件事触发了我的什么情绪？（愤怒、恐惧、悲伤、喜悦？）</li>
+        <li>③ 这个情绪在保护我的什么需求？</li>
+        <li>④ 如果用一个易经卦象来描述今天的状态，会是哪一卦？</li>
+        <li>⑤ 明天我想在哪方面做出一点小改变？</li>
+      </ul>
+    </div>
+
+    <div class="article">
+      <h3>身体扫描：情绪藏在身体里</h3>
+      <p>心理学研究证明：所有未被表达的情绪，最终都会储存在身体里。易经早就知道这个道理——「身心合一」。</p>
+      <div class="technique-card"><h4>胸闷 / 心脏区域</h4><p>可能连接的情绪：悲伤、失落、心碎。易经对应：离卦（火）过旺。<br>建议：允许自己悲伤，找信任的人倾诉或痛快哭一场。</p></div>
+      <div class="technique-card"><h4>胃部 / 腹部</h4><p>可能连接的情绪：焦虑、紧张、不安全感。易经对应：坤卦（土）不安。<br>建议：深呼吸，把注意力带到腹部，让身体放松下来。</p></div>
+      <div class="technique-card"><h4>肩膀 / 背部</h4><p>可能连接的情绪：压力过大、承担太多。易经对应：艮卦（山）过重。<br>建议：学会说"不"，放下不属于自己的责任。</p></div>
+      <div class="technique-card"><h4>头部 / 太阳穴</h4><p>可能连接的情绪：思虑过度、用脑过度。易经对应：乾卦（金）过刚。<br>建议：停止过度思考，去运动、散步、做具体的小事。</p></div>
+    </div>
+
+    <div class="article">
+      <h3>易经「观」卦的觉察法</h3>
+      <blockquote><p>《易经·观卦》：「观天之神道，而四时不忒，圣人以神道设教，而天下服矣。」</p></blockquote>
+      <p>「观」卦教我们一种觉察的方法：像旁观者一样观察自己。</p>
+      <ul>
+        <li><strong>第一步：</strong>找一个安静的角落，坐下来，闭上眼睛</li>
+        <li><strong>第二步：</strong>想象自己站在高处，俯视自己今天的生活</li>
+        <li><strong>第三步：</strong>问自己：今天我像哪一卦？</li>
+        <li><strong>第四步：</strong>如果想让明天更像「泰卦」，我今天需要做什么改变？</li>
+      </ul>
+    </div>
+  </div>
+
+</div>
+<div class="footer"><p>© 2025 <span>易道 YIDAO</span> | Xinhui-631</p><p style="margin-top:6px;">本栏目内容仅供参考，不替代专业心理咨询</p></div>
+<script>
+document.querySelectorAll('.tab-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+    document.querySelectorAll('.tab-panel').forEach(c => c.classList.remove('active'));
+    btn.classList.add('active');
+    const target = document.getElementById(btn.dataset.target);
+    if (target) target.classList.add('active');
+  });
+});
+</script>
+</body>
+</html>
